@@ -1,4 +1,4 @@
-const scriptURL = "PASTE_YOUR_WEB_APP_URL_HERE";
+const scriptURL = "https://script.google.com/macros/s/AKfycbzCScHdC9A89s6sbf5en8SCjfspdM9mlnNWMn9_LjqkgJqPGoOgYEk1fomBJsZebKxjVg/exec";
 const form = document.getElementById("grievance-form");
 
 form.addEventListener("submit", (e) => {
