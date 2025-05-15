@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffeaf2;
+  color: #333;
+}
+
+body.landing {
+  background: url('marian.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.welcome-box {
+  background-color: #ffc0cb;
+  border: 2px solid #e59bb0;
+  border-radius: 20px;
+  padding: 2em;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.welcome-box h1 {
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  color: #000;
+}
+
+.welcome-box p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 1.5em;
+}
+
+.proceed-button {
+  display: inline-block;
+  background: white;
+  color: #d6336c;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.proceed-button:hover {
+  background: #fce4ec;
+}
+
+body.form .container {
+  max-width: 500px;
+  margin: 2em auto;
+  background: #fff0f6;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1em;
+}
+
+form button {
+  background: #f06292;
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 12px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #ec407a;
+}
+
+@media (max-width: 600px) {
+  .welcome-box {
+    padding: 1em;
+  }
+  form input, form textarea {
+    font-size: 0.9em;
+  }
+}

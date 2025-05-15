@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marian's Message</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="form">
+  <div class="container">
+    <h2>What’s on your mind?</h2>
+    <form id="grievance-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="text" name="title" placeholder="Title" required />
+      <textarea name="message" placeholder="Message" required></textarea>
+
+      <label for="mood">Mood:</label>
+      <input type="range" name="mood" min="1" max="10" />
+
+      <label for="severity">How serious is it?</label>
+      <input type="range" name="severity" min="1" max="10" />
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
